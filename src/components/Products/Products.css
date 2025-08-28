@@ -1,0 +1,61 @@
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* تنظیم ارتفاع برای نمایش ۵۰ درصد */
+    width: 50%; /* تنظیم عرض برای نمایش ۵۰ درصد */
+    overflow-y: auto; /* فعال کردن اسکرول عمودی */
+    position: fixed; /* تنظیم موقعیت برای قرارگیری روی بقیه عناصر */
+    top: 50%; /* تنظیم موقعیت به وسط صفحه */
+    left: 50%; /* تنظیم موقعیت به وسط صفحه */
+    transform: translate(-50%, -50%); /* مرکز قرار دادن */
+    z-index: 1000; /* تنظیم z-index برای قرارگیری روی بقیه عناصر */
+    background-color: white; /* تنظیم پس زمینه برای اطمینان از خوانایی */
+    padding: 20px; /* افزودن padding در صورت نیاز */
+    border-radius: 10px; /* تنظیم گوشه‌های گرد */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* اضافه کردن سایه برای بهتر دیده شدن */
+}
+
+  
+  .product-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 20%; /* اندازه ثابت برای آیتم‌ها */
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 70%;
+  }
+  
+  .product-item-text {
+    margin-top: 10px;
+  }
+  
+  .product-item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-to-cart button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-to-cart button:hover {
+    background-color: darkred;
+  }
+  

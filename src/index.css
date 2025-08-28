@@ -1,0 +1,254 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: 'vazir' !important;
+}
+body {
+  direction: rtl;
+  font-family: 'vazir' !important;
+  overflow-x: hidden;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 200px;
+  background: crimson;
+  color: #fff;
+}
+nav a{
+  color: #fff;
+  font-size: 25px;
+}
+
+.products{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.products .product-item{
+  box-shadow: 0 0 10px rgba(117,117,117,.2);
+  margin-top: 30px;
+}
+
+.products .product-item img {  
+  width: 100%; /* عرض تصویر به کل عرض عنصر پدر تنظیم می‌شود */  
+  height: auto; /* به صورتی که نسبت ابعاد تصویر حفظ شود */  
+  max-height: 200px; /* حداکثر ارتفاع تصویر، می‌توانید این مقدار را تغییر دهید */  
+  min-height: 200px;
+  object-fit: cover; /* تصویر را به‌صورتی که خوب نمایش داده شود برش می‌زند */  
+  display: block; /* برای حذف فضای سفید زیر تصویر */  
+}
+.products .product-item .product-item-text{
+  padding:1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.products .product-item .product-item-text .add-to-cart button{
+  background: rgb(16, 185, 86);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+
+.cart {  
+  display: flex;  
+  flex-wrap: wrap;   
+  justify-content: center;  
+  max-width: 2000px;  
+  margin: auto;  
+  padding-top: 50px;  
+}  
+
+.cart .cart-item {  
+  box-shadow: 0 0 10px rgba(117, 117, 117, .2);  
+  border: 1px solid crimson;
+  border-radius: 10px;
+  padding: 3%;
+  margin: 1%;
+  text-align: center;
+
+}  
+
+.cart .cart-item img {  
+  width: 100%; /* تصاویر به صورت کامل به عرض کانتینر متناسب می‌شوند */  
+  max-width: 400px; /* حداکثر عرض */  
+  max-height: 200px; /* حداکثر ارتفاع تصویر، می‌توانید این مقدار را تغییر دهید */  
+  min-height: 200px;
+}  
+
+.cart .cart-item .cart-item-text {  
+  padding: 10px;  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center; 
+  margin-bottom: 5%; 
+}  
+
+.cart .cart-item .cart-item-text .cart-item-info h4 {  
+  font-size: 1.5rem; /* واحد ریسپانسیو */  
+  border-bottom: 1px solid rgb(212, 212, 212);  
+  padding-bottom: 20px;  
+}  
+
+.cart .cart-item .cart-item-text .cart-item-info h5 {  
+  font-size: 1.2rem; /* واحد ریسپانسیو */  
+  margin-top: 3%;
+margin-bottom: 3%;
+ 
+}  
+.rebutton button{ 
+  background-color: crimson; 
+  color: #fff;
+  border: none;
+  margin-right: 3%;
+  padding: 5px 5px;  
+margin-top: 5%;
+margin-bottom: 5%;
+border-radius: 5px;
+width: 100%;
+
+ }
+ .rebutton button:hover{ 
+  background-color: rgb(130, 12, 36); 
+
+
+ }
+.cart .cart-item span {  
+  padding: 0 10px;  
+}  
+
+.total {  
+  text-align: center;  
+  font-size: 1.5rem; /* واحد ریسپانسیو */  
+  background: crimson;  
+  color: #fff;  
+  padding: 50px 0;  
+}  
+
+/* میدیا کوئری‌ها برای صفحات مختلف */  
+@media (max-width: 1200px) {  
+  .cart .cart-item {  
+  }  
+}  
+
+@media (max-width: 768px) {  
+  .cart .cart-item {  
+    flex: 1 0 40%; /* 2 کالا در هر ردیف */  
+  }  
+}  
+
+@media (max-width: 480px) {  
+  .cart .cart-item {  
+    flex: 1 0 100%; /* 1 کالا در هر ردیف */  
+  }  
+}  
+
+.right-navbar {  
+  position: relative;  
+}
+.notif{
+  border-radius: 50%;
+  font-size: 13px;
+  background: rgb(39, 116, 240);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+}
+
+/*safhe asle*/
+.header {  
+  display: flex;  
+  width: 67%;  
+  height: 10vh;  
+  background-color: rgba(217, 217, 222, 0.889);  
+  align-items: center; 
+}  
+
+.header h1, .header h2 {  
+  padding-top: 1%;  
+  margin: 0 1%;  
+  font-size: 2.5vw; /* متناسب با عرض ویندوز */  
+  text-align: center; /* مرکز کردن متن */  
+  margin-right: 5%; 
+
+}  
+
+/* اضافه کردن میدیا کوئری برای سایزهای مختلف */  
+@media (max-width: 768px) {  
+  .header h1, .header h2 {  
+    font-size: 2.5vw; /* سایز بزرگتر برای صفحه نمایش‌های کوچک */  
+    margin-right: 1%; 
+
+  }  
+
+    nav{
+      padding: 10px 50px;
+    }
+}  
+
+
+@media (max-width: 495px) {  
+  .header h1, .header h2 {  
+    font-size: 5vw; /* سایز بزرگتر برای موبایل */  
+  }  
+  .products {
+    justify-content: center;
+    padding:2%;
+  }
+}  
+
+@keyframes colorChange {  
+  0% { color: black; }  
+  50% { color: red; }  
+  100% { color: black; }  
+}  
+
+.header h1 {  
+  animation: shakeAndColorChange 2.25s infinite;  
+}  
+
+
+.header {  
+  height: 12vh;  
+
+}  
+
+
+
+
+@keyframes shakeAndColorChange {  
+  0% { transform: scale(1); color: black; }  
+  25% { transform: scale(1.1); color: red; }  
+  50% { transform: scale(0.9); color: black; }  
+  75% { transform: scale(1.1); color: red; }  
+  100% { transform: scale(1); color: black; }  
+}  
+
+.header h2 {  
+  animation: shakeAndColorChange 0.75s infinite;  
+}   
+
+@keyframes colorChangeto {  
+  0% { color: red; }  
+  50% { color: black; }  
+  100% { color: red; }  
+}

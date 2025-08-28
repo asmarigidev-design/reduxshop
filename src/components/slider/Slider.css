@@ -1,0 +1,176 @@
+.redu{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.redu .cont{
+  margin-top: 3%;
+  align-items: center;
+width: 60%;
+margin-right: 3%;
+}
+.redu .cartparent{
+width: 30%;
+margin-top: -6%;
+margin-left: 3%;
+}
+ .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px; /* گوشه‌های گرد برای کل اسلایدشو */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* سایه زیر اسلایدشو */
+  }
+  
+  .slide {
+    display: none;
+    align-items: center;
+    height: 70vh; /* ارتفاع اسلاید */
+    transition: opacity 1s ease-in-out; /* جابه‌جایی نرم */
+  }
+  
+  .slide.active {
+    display: flex;
+    opacity: 1;
+  }
+  
+  .slide-image {
+    width: 100%; /* عرض 100% */
+    height: auto; /* ارتفاع خودکار */
+    height: 70vh; /* ارتفاع اسلاید */
+    border-radius: 15px; /* گوشه‌های گرد */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* سایه نرم */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن نرم */
+    animation: zoom 1s ease;
+    -webkit-animation: zoom 1s ease;
+  }
+  
+  .slide-text {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); /* پس‌زمینه نیمه شفاف برای متن */
+    border-radius: 15px; /* گوشه‌های گرد برای متن */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* سایه نرم برای متن */
+    position: absolute; /* قرار دادن متن روی تصویر */
+    bottom: 20px; /* فاصله از پایین */
+    left: 20px; /* فاصله از چپ */
+    width: calc(100% - 40px); /* عرض کل به علاوه فاصله‌ها */
+    box-sizing: border-box; /* شامل حاشیه‌ها و فضای داخلی */
+  }
+  
+
+
+.cartco {  
+  
+  margin-top: 2%;
+    width: 100%;  
+    position: relative;  
+    border-radius: 10px;  
+    overflow: hidden;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+}  
+
+.image {  
+    height: 29vh; /* ارتفاع تصویر */ 
+    background-size: cover;  
+    background-position:center b;  
+    filter: brightness(80%); /* تیره‌تر کردن تصویر */ 
+      width: 100%; /* 100% عرض کارت را اشغال می کند */
+transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* افزودن انیمیشن به transform و filter */
+
+}  
+.image:hover {  
+  transform: rotate(5deg) scale(1.1); /* چرخش و بزرگنمایی تصویر به هنگام هاور */
+  filter: sepia(50%); /* تغییر رنگ تصویر به هنگام هاور */
+
+} 
+.cartco p{  
+    position: absolute;  
+    bottom: 0;  
+    color: rgba(255, 255, 255, 0.907); 
+    background-color: rgba(0, 0, 0, 0.644); 
+    width: 100%;
+    height: 20%;
+    font-weight: bold;  
+    font-size: 16px;  
+text-align: center;
+font-size: xx-large;
+padding-top: 2%;
+cursor: pointer;
+}
+.cartco p:hover{  
+  color: rgba(220, 104, 104, 0.907); 
+  background-color: rgba(0, 0, 0, 0.89);  
+
+
+
+}
+
+@keyframes zoom {
+  0% {
+      transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      opacity: 0;
+  }
+  100%{
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      opacity: 1;
+}
+}
+@media (max-width: 1200px) {  
+  .redu .cont{
+    margin-top: 2%;
+  }
+  .redu .cartparent{
+  margin-top: -8%;
+  }
+  .image {  
+    height: 28vh; /* ارتفاع تصویر */
+} 
+}
+@media (max-width: 768px) {  
+  .redu .cont{
+    margin-top: 5%;
+  }
+  .redu .cartparent{
+  margin-top: -15%;
+  }
+  .image {  
+    height: 28vh; /* ارتفاع تصویر */
+} 
+}
+@media (max-width: 495px) {  
+  .redu{
+    margin: 10px;
+    flex-direction: column;
+  }
+  .redu .cont{
+    margin-top: 3%;
+  width: 90%;
+  margin-right: 5%;
+  }
+  .redu .cartparent{
+  width: 90%;
+  margin-top: 1%;
+  margin-right: 5%;
+  margin: 3%;
+  }
+ 
+
+  .header {  
+width: 100%;  }  
+  
+  .image {  
+    height: 40vh; /* ارتفاع تصویر */
+} 
+}
