@@ -76,10 +76,10 @@ margin-left: 3%;
 .image {  
     height: 29vh; /* ارتفاع تصویر */ 
     background-size: cover;  
-    background-position:center b;  
+    background-position:center;  
     filter: brightness(80%); /* تیره‌تر کردن تصویر */ 
-      width: 100%; /* 100% عرض کارت را اشغال می کند */
-transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* افزودن انیمیشن به transform و filter */
+    width: 100%; /* 100% عرض کارت را اشغال می کند */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* افزودن انیمیشن به transform و filter */
 
 }  
 .image:hover {  
@@ -143,7 +143,7 @@ cursor: pointer;
     margin-top: 5%;
   }
   .redu .cartparent{
-  margin-top: -15%;
+  margin-top: -8%;
   }
   .image {  
     height: 28vh; /* ارتفاع تصویر */
