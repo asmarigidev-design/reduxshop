@@ -20,15 +20,15 @@ margin-left: 3%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border-radius: 20px; /* گوشه‌های گرد برای کل اسلایدشو */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* سایه زیر اسلایدشو */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
   }
   
   .slide {
     display: none;
     align-items: center;
-    height: 70vh; /* ارتفاع اسلاید */
-    transition: opacity 1s ease-in-out; /* جابه‌جایی نرم */
+    height: 70vh;
+    transition: opacity 1s ease-in-out;
   }
   
   .slide.active {
@@ -37,12 +37,12 @@ margin-left: 3%;
   }
   
   .slide-image {
-    width: 100%; /* عرض 100% */
-    height: auto; /* ارتفاع خودکار */
-    height: 70vh; /* ارتفاع اسلاید */
-    border-radius: 15px; /* گوشه‌های گرد */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* سایه نرم */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن نرم */
+    width: 100%; 
+    height: auto;
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     animation: zoom 1s ease;
     -webkit-animation: zoom 1s ease;
   }
@@ -51,14 +51,14 @@ margin-left: 3%;
     padding: 20px;
     text-align: center;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.8); /* پس‌زمینه نیمه شفاف برای متن */
-    border-radius: 15px; /* گوشه‌های گرد برای متن */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* سایه نرم برای متن */
-    position: absolute; /* قرار دادن متن روی تصویر */
-    bottom: 20px; /* فاصله از پایین */
-    left: 20px; /* فاصله از چپ */
-    width: calc(100% - 40px); /* عرض کل به علاوه فاصله‌ها */
-    box-sizing: border-box; /* شامل حاشیه‌ها و فضای داخلی */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    bottom: 20px;
+    left: 20px; 
+    width: calc(100% - 40px); 
+    box-sizing: border-box;
   }
   
 
@@ -74,17 +74,17 @@ margin-left: 3%;
 }  
 
 .image {  
-    height: 29vh; /* ارتفاع تصویر */ 
+    height: 29vh;
     background-size: cover;  
     background-position:center;  
-    filter: brightness(80%); /* تیره‌تر کردن تصویر */ 
-    width: 100%; /* 100% عرض کارت را اشغال می کند */
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* افزودن انیمیشن به transform و filter */
+    filter: brightness(80%);
+    width: 100%;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
 
 }  
 .image:hover {  
-  transform: rotate(5deg) scale(1.1); /* چرخش و بزرگنمایی تصویر به هنگام هاور */
-  filter: sepia(50%); /* تغییر رنگ تصویر به هنگام هاور */
+  transform: rotate(5deg) scale(1.1); 
+  filter: sepia(50%);
 
 } 
 .cartco p{  
@@ -135,7 +135,7 @@ cursor: pointer;
   margin-top: -8%;
   }
   .image {  
-    height: 28vh; /* ارتفاع تصویر */
+    height: 28vh; 
 } 
 }
 @media (max-width: 768px) {  
@@ -146,7 +146,7 @@ cursor: pointer;
   margin-top: -8%;
   }
   .image {  
-    height: 28vh; /* ارتفاع تصویر */
+    height: 28vh; 
 } 
 }
 @media (max-width: 495px) {  
@@ -171,6 +171,6 @@ cursor: pointer;
 width: 100%;  }  
   
   .image {  
-    height: 40vh; /* ارتفاع تصویر */
+    height: 40vh; 
 } 
 }

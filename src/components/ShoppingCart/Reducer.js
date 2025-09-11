@@ -2,16 +2,24 @@
 const Reducer = (cart = [], action) => {
 
      // افزودن محصول به سبد خرید | Add item to cart
-     if (action.type === "ADD") {
-          let tempcart = cart.filter((item) => item.id === action.payload.id); // بررسی وجود محصول | Check if item exists
-          
-          if (tempcart.length < 1) {
-               return [...cart, action.payload]; // افزودن محصول جدید | Add new item
-          } else {
-               alert("بابا داریمش تو سبد خرید"); // پیام هشدار | Alert message
-               return cart; // بدون تغییر | No change
-          }
+   if (action.type === "ADD") {
+     let tempcart = cart.filter((item) => item.id === action.payload.id); // بررسی وجود محصول
+
+     if (tempcart.length < 1) {
+          return [...cart, action.payload]; // افزودن محصول جدید
+     } else {
+          const alertBox = document.createElement("div");
+          alertBox.className = "custom-alert";
+          alertBox.textContent = "در سبد خرید موجوداست";
+          document.body.appendChild(alertBox);
+
+          setTimeout(() => {
+               alertBox.remove();
+          }, 3000); // حذف خودکار بعد از ۳ ثانیه
+
+          return cart; // بدون تغییر
      }
+}
 
      // حذف محصول از سبد خرید | Remove item from cart
      if (action.type === "REMOVE") {
